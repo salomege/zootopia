@@ -1,60 +1,16 @@
-	// var click = document.getElementsByClassName('click');
-	// var promotionsImg = document.getElementsByClassName('promotions-img');
-	// var l = 0;
-	// click[1].onclick = ()=>{
-	// 	l++;
-	// 	for(var i of promotionsImg)
-	// 	{
-	// 		if (l==0) {i.style.left = "0px";}
-	// 		if (l==1) {i.style.left = "-202px";}
-	// 		if (l==2) {i.style.left = "-404px";}
-	// 		if (l==3) {i.style.left = "-606px";}
-	// 		if (l==4) {i.style.left = "-808px";}
-    //         if (l==5) {i.style.left = "-1010px";}
-	// 		if (l==6) {i.style.left = "-1212px";}
-	// 		if (l>6) {l=6;}
-	// 	}
-	// }
-	// click[0].onclick = ()=>{
-	// 	l--; 
-	// 	for(var i of promotionsImg)
-	// 	{	
-	// 		if (l==0) {i.style.left = "0px";}
-	// 		if (l==1) {i.style.left = "-202px";}
-	// 		if (l==2) {i.style.left = "-404px";}
-	// 		if (l==3) {i.style.left = "-606px";}
-    //         if (l==4) {i.style.left = "-808px";}
-	// 		if (l==5) {i.style.left = "-1010px";}
-			
-	// 		if (l < 0) {l=0;}
-	// 	}
-	// }
-	
+const productContainers = [...document.querySelectorAll('.product-container')];
+const nxtBtn = [...document.querySelectorAll('.nxt-btn')];
+const preBtn = [...document.querySelectorAll('.pre-btn')];
 
+productContainers.forEach((item, i) => {
+    let containerDimensions = item.getBoundingClientRect();
+    let containerWidth = containerDimensions.width;
 
-	var click = document.getElementsByClassName('click');
-	var promotionsImg = document.getElementsByClassName('promotions-img');
-	var l = 0;
-	click[1].onclick = ()=>{
-		l++;
-		for(var i of promotionsImg)
-		{
-			if (l==0) {i.style.left = "0px";}
-			if (l==1) {i.style.left = "-740px";}
-			if (l==2) {i.style.left = "-1480px";}
-			if (l==3) {i.style.left = "-2220px";}
-			if (l==4) {i.style.left = "-2960px";}
-			if (l>4) {l=4;}
-		}
-	}
-	click[0].onclick = ()=>{
-		l--; 
-		for(var i of promotionsImg)
-		{	
-			if (l==0) {i.style.left = "0px";}
-			if (l==1) {i.style.left = "-740px";}
-			if (l==2) {i.style.left = "-1480px";}
-			if (l==3) {i.style.left = "-2220px";}
-			if (l < 0) {l=0;}
-		}
-	}
+    nxtBtn[i].addEventListener('click', () => {
+        item.scrollLeft += containerWidth;
+    })
+
+    preBtn[i].addEventListener('click', () => {
+        item.scrollLeft -= containerWidth;
+    })
+})
