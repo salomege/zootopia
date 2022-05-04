@@ -1716,3 +1716,7 @@ margin-right: 5px;
             color: #fff;
             background: #74B42C;
         }
+
+        .filter-mob-vertion {
+            display: none;
+        }

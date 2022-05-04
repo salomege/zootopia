@@ -282,4 +282,80 @@ flex-direction: column;
     width:80%;
     margin:0 auto;
 }
+
+/* for dogs page */
+
+.nav-line {
+    flex-direction: column-reverse;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+}
+.filter-mob-vertion {
+    width: 256px;
+    padding: 20px 30px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.filter-mob-vertion span {
+    font-size: 14px;
+    font-family: 'mtavruli_normal';
+
+}
+
+.main {
+    display: none;
+}
+.dogs-mob {
+    display: none;
+}
+.sort-div {
+    margin-top: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+.page-direction {
+    margin-top: 30px;
+    padding-left: 0px;
+    margin-left: -60px;
+    margin-bottom: 20px;
+   
+}
+.sidebar {
+    display: none;
+}
+.grid-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0px;
+}
+.pagination {
+    display: none;
+}
+.pages-mob {
+    max-width: 277px;
+    margin: 0 auto;
+}
+.pages-mob img {
+    padding:20px 15px;
+    
+}
+.pages-mob p {
+    text-align: center;
+    font-size: 18px;
+    font-family: 'firago-medium';
+
+}
+.pages-mob  span {
+    color: #C8C8C8;
+    font-size: 14px;
+}
 }
