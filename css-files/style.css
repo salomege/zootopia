@@ -1533,10 +1533,11 @@ font-family: 'mtavruli_normal';
 
 .add-cart-section {
     background-color: white;
+    margin-bottom: 50px;
 }
 .add-cart {
     background-color: #74B42C;
-    max-width: 217px;
+    width: 217px;
     height: 54px;
     display: flex;
     align-items: center;
@@ -1567,6 +1568,9 @@ font-family: 'mtavruli_normal';
     margin-top: 60px;
     margin-bottom: 130px;
 justify-content: space-around;
+}
+.product-descr-mob-vertion {
+    display: none;
 }
 .discription-section h2 {
     font-size: 18px;
@@ -1719,4 +1723,7 @@ margin-right: 5px;
 
         .filter-mob-vertion {
             display: none;
+        }
+        .pages-mob {
+            display:none;
         }
