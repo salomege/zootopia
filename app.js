@@ -152,5 +152,3 @@ productContainers.forEach((item, i) => {
     //   element.innerHTML = liTag; 
     //   return liTag; 
     // }
-}
-
