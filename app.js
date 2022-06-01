@@ -149,14 +149,8 @@ productContainers.forEach((item, i) => {
       }
     
       
-      element.innerHTML = liTag; //add li tag inside ul tag
-      return liTag; //reurn the li tag
+      element.innerHTML = liTag; 
+      return liTag; 
     }
 }
 
-// {
-//     function myFunction(smallImg) {
-//         var fullImg = document.getElementById("imageBox");
-//         fullImg.src=smallImg.src;
-//     }
-// }
