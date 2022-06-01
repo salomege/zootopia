@@ -415,4 +415,15 @@ margin-top: 20px;
 .forth-icon {
     margin-right: 32px;
 }
+.filter-section-mob {
+    display: block;
+}
+#myDIV {
+    display: none;
+   }
+button {
+    border-color: white;
+    background-color: white;
+}   
+
 }
